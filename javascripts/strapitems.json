@@ -1,0 +1,40 @@
+{
+  "straps": [
+    {
+      "id": 1,
+      "img": { "url": "./Imgs/straps/straps-black-g_600x.jpg" },
+      "name": "Black Standard Strap",
+      "price": 45
+    },
+    {
+      "id": 2,
+      "img": { "url": "./Imgs/straps/straps-camel-g_600x.jpg" },
+      "name": "Camel Standard Strap",
+      "price": 45
+    },
+    {
+      "id": 3,
+      "img": { "url": "./Imgs/straps/straps-grey-g_600x.jpg" },
+      "name": "Grey Standard Strap",
+      "price": 45
+    },
+    {
+      "id": 4,
+      "img": { "url": "./Imgs/straps/straps-nude-g_600x.jpg" },
+      "name": "Blash Standard Strap",
+      "price": 45
+    },
+    {
+      "id": 5,
+      "img": { "url": "./Imgs/straps/straps-green-g_600x.jpg" },
+      "name": "Green Standard Strap",
+      "price": 45
+    },
+    {
+      "id": 6,
+      "img": { "url": "./Imgs/straps/straps-navy-g_600x.jpg" },
+      "name": "Navy Standard Strap",
+      "price": 45
+    }
+  ]
+}

@@ -1,0 +1,586 @@
+.about-straps-header {
+  position: relative;
+  width: 90%;
+  height: 550px;
+  margin: auto;
+  background-image: url("/Imgs/AboutTinker_1800x.png.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-straps-header .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-straps-header .cover h2 {
+  color: white;
+  width: 60%;
+  font-size: 3rem;
+  font-family: 'EB Garamond', serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.about-straps-container {
+  width: 40%;
+  margin: 100px auto 0px auto;
+}
+
+.about-straps-container .about-straps-imgcontainer {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.about-straps-container .about-straps-imgcontainer .about-straps-img {
+  width: 100%;
+  height: 400px;
+  background-image: url("/Imgs/about-strap-it.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about-straps-container .about-straps-imgcontainer .about-straps-img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.about-straps-container .about-straps-text {
+  width: 90%;
+  margin: auto;
+}
+
+.about-straps-container .about-straps-text h2 {
+  width: 100%;
+  height: 100px;
+  font-weight: 300;
+  font-size: 2.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3f3f3f;
+  font-family: 'EB Garamond', serif;
+}
+
+.about-straps-container .about-straps-text p {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b6b6b6;
+  color: #3f3f3f;
+  font-size: 14px;
+}
+
+.about-straps-container .about-straps-text .btn-container {
+  font-family: sans-serif;
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-straps-container .about-straps-text .btn-container button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 1rem;
+  color: #3f3f3f;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.about-straps-container .about-straps-text .btn-container button:hover {
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .about-straps-header {
+    position: relative;
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    background-image: url("/Imgs/AboutTinker_1800x.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-straps-header .cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-header .cover h2 {
+    color: white;
+    width: 70%;
+    font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .about-straps-container {
+    width: 40%;
+    margin: 100px auto 0px auto;
+  }
+  .about-straps-container .about-straps-imgcontainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img {
+    width: 100%;
+    height: 400px;
+    background-image: url("/Imgs/about-strap-it.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .about-straps-container .about-straps-text {
+    width: 90%;
+    margin: auto;
+  }
+  .about-straps-container .about-straps-text h2 {
+    width: 100%;
+    height: 100px;
+    font-weight: 300;
+    font-size: 2.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3f3f3f;
+    font-family: 'EB Garamond', serif;
+  }
+  .about-straps-container .about-straps-text p {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6b6b6;
+    color: #3f3f3f;
+    font-size: 14px;
+  }
+  .about-straps-container .about-straps-text .btn-container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-container .about-straps-text .btn-container button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .about-straps-container .about-straps-text .btn-container button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-straps-header {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    background-image: url("/Imgs/AboutTinker_1800x.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-straps-header .cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-header .cover h2 {
+    color: white;
+    width: 70%;
+    font-size: 2rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .about-straps-container {
+    width: 40%;
+    margin: 100px auto 0px auto;
+  }
+  .about-straps-container .about-straps-imgcontainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img {
+    width: 100%;
+    height: 300px;
+    background-image: url("/Imgs/about-strap-it.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .about-straps-container .about-straps-text {
+    width: 90%;
+    margin: auto;
+  }
+  .about-straps-container .about-straps-text h2 {
+    width: 100%;
+    height: 100px;
+    font-weight: 300;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3f3f3f;
+    font-family: 'EB Garamond', serif;
+  }
+  .about-straps-container .about-straps-text p {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6b6b6;
+    color: #3f3f3f;
+    font-size: 14px;
+  }
+  .about-straps-container .about-straps-text .btn-container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-container .about-straps-text .btn-container button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .about-straps-container .about-straps-text .btn-container button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .about-straps-header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    background-image: url("/Imgs/AboutTinker_1800x.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .about-straps-header .cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-header .cover h2 {
+    color: white;
+    width: 70%;
+    font-size: 1.4rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .about-straps-container {
+    width: 70%;
+    margin: 100px auto 0px auto;
+  }
+  .about-straps-container .about-straps-imgcontainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img {
+    width: 100%;
+    height: 250px;
+    background-image: url("/Imgs/about-strap-it.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .about-straps-container .about-straps-text {
+    width: 90%;
+    margin: auto;
+  }
+  .about-straps-container .about-straps-text h2 {
+    width: 100%;
+    height: 100px;
+    font-weight: 300;
+    font-size: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3f3f3f;
+    font-family: 'EB Garamond', serif;
+  }
+  .about-straps-container .about-straps-text p {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6b6b6;
+    color: #3f3f3f;
+    font-size: 14px;
+  }
+  .about-straps-container .about-straps-text .btn-container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-container .about-straps-text .btn-container button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .about-straps-container .about-straps-text .btn-container button:hover {
+    background: black;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about-straps-header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    background-image: url("/Imgs/AboutTinker_1800x.png.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .about-straps-header .cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-header .cover h2 {
+    color: white;
+    width: 90%;
+    font-size: 1.3rem;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .about-straps-container {
+    width: 90%;
+    margin: 100px auto 0px auto;
+  }
+  .about-straps-container .about-straps-imgcontainer {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img {
+    width: 100%;
+    height: 250px;
+    background-image: url("/Imgs/about-strap-it.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-straps-container .about-straps-imgcontainer .about-straps-img:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .about-straps-container .about-straps-text {
+    width: 90%;
+    margin: auto;
+  }
+  .about-straps-container .about-straps-text h2 {
+    width: 100%;
+    height: 100px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3f3f3f;
+    font-family: 'EB Garamond', serif;
+  }
+  .about-straps-container .about-straps-text p {
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6b6b6;
+    color: #3f3f3f;
+    font-size: 14px;
+  }
+  .about-straps-container .about-straps-text .btn-container {
+    font-family: sans-serif;
+    width: 100%;
+    height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-straps-container .about-straps-text .btn-container button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 1rem;
+    color: #3f3f3f;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  .about-straps-container .about-straps-text .btn-container button:hover {
+    background: black;
+    color: white;
+  }
+}
+/*# sourceMappingURL=aboutstraps.css.map */

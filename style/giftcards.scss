@@ -1,0 +1,770 @@
+.gift-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(1, 1.4fr 1fr);
+
+  .gift-img-container {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 90%;
+      max-height: 600px;
+    }
+  }
+
+  .gift-order-container {
+    width: 100%;
+    .text-order {
+      width: 100%;
+
+      h2 {
+        font-family: "EB Garamond", serif;
+        font-size: 3rem;
+        font-weight: 100;
+        margin-top: 50px;
+        color: rgb(88, 88, 88);
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-top: 50px;
+        color: rgb(88, 88, 88);
+      }
+
+      p {
+        width: 90%;
+        font-size: 14px;
+        line-height: 1.7rem;
+        margin-top: 50px;
+        color: rgb(88, 88, 88);
+      }
+
+      .disclamer {
+        font-size: 12px;
+        color: rgb(146, 146, 146);
+        line-height: 1.2rem;
+      }
+    }
+    .add-order {
+      width: 90%;
+      margin-top: 50px;
+
+      .type {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-out;
+      }
+      .amount {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-out;
+      }
+      .quantity {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.5s ease-out;
+
+        button {
+          height: 100%;
+          width: 25%;
+          border: none;
+          background: white;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: transparent;
+          color: rgb(88, 88, 88);
+        }
+
+        h3 {
+          width: 20%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 300;
+          font-size: 16px;
+        }
+
+        button:hover {
+          background: rgb(219, 219, 219);
+        }
+      }
+      .add-gift {
+        width: 100%;
+        height: 50px;
+        background: #efefef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        transition: 0.5s ease-out;
+        cursor: pointer;
+        margin-top: 40px;
+        border: none;
+      }
+      .add-gift:hover {
+        background: black;
+        color: white;
+      }
+    }
+
+    select {
+      width: 60%;
+      height: 100%;
+      border: none;
+      font-size: 18px;
+      color: rgb(104, 104, 104);
+      background: transparent;
+      cursor: pointer;
+      appearance: none;
+      font-size: 16px;
+    }
+
+    label {
+      font-size: 16px;
+      color: rgb(104, 104, 104);
+      margin-left: 10px;
+      transition: 0.5s ease-out;
+    }
+    label:hover {
+      transform: translateX(20px);
+    }
+
+    .type:hover {
+      background: #efefef;
+    }
+    .amount:hover {
+      background: #efefef;
+    }
+    .quantity:hover {
+      background: #efefef;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .gift-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1.4fr 1fr);
+
+    .gift-order-container {
+      width: 100%;
+      .text-order {
+        width: 100%;
+
+        h2 {
+          font-family: "EB Garamond", serif;
+          font-size: 3rem;
+          font-weight: 100;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        p {
+          width: 90%;
+          font-size: 14px;
+          line-height: 1.7rem;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        .disclamer {
+          font-size: 12px;
+          color: rgb(146, 146, 146);
+          line-height: 1.2rem;
+        }
+      }
+      .add-order {
+        width: 90%;
+        margin-top: 50px;
+
+        .type {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .amount {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .quantity {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+
+          button {
+            height: 100%;
+            width: 25%;
+            border: none;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: rgb(88, 88, 88);
+          }
+
+          h3 {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background: rgb(219, 219, 219);
+          }
+        }
+        .add-gift {
+          width: 100%;
+          height: 50px;
+          background: #efefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          transition: 0.5s ease-out;
+          cursor: pointer;
+          margin-top: 40px;
+        }
+        .add-gift:hover {
+          background: black;
+          color: white;
+        }
+      }
+
+      select {
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        color: rgb(104, 104, 104);
+        background: transparent;
+        cursor: pointer;
+        appearance: none;
+        font-size: 16px;
+      }
+
+      label {
+        font-size: 16px;
+        color: rgb(104, 104, 104);
+        margin-left: 10px;
+        transition: 0.5s ease-out;
+      }
+      label:hover {
+        transform: translateX(20px);
+      }
+
+      .type:hover {
+        background: #efefef;
+      }
+      .amount:hover {
+        background: #efefef;
+      }
+      .quantity:hover {
+        background: #efefef;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gift-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(1, 0.5fr 1fr) / repeat(1, 1fr);
+    margin-bottom: 100px;
+
+    .gift-order-container {
+      grid-row: 2/3;
+      width: 100%;
+      .text-order {
+        width: 100%;
+
+        h2 {
+          font-family: "EB Garamond", serif;
+          font-size: 3rem;
+          font-weight: 100;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          font-weight: 300;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        p {
+          width: 90%;
+          font-size: 14px;
+          line-height: 1.7rem;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        .disclamer {
+          font-size: 12px;
+          color: rgb(146, 146, 146);
+          line-height: 1.2rem;
+        }
+      }
+      .add-order {
+        width: 90%;
+        margin-top: 50px;
+
+        .type {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .amount {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .quantity {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+
+          button {
+            height: 100%;
+            width: 25%;
+            border: none;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: rgb(88, 88, 88);
+          }
+
+          h3 {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background: rgb(219, 219, 219);
+          }
+        }
+        .add-gift {
+          width: 100%;
+          height: 50px;
+          background: #efefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          transition: 0.5s ease-out;
+          cursor: pointer;
+          margin-top: 40px;
+        }
+        .add-gift:hover {
+          background: black;
+          color: white;
+        }
+      }
+
+      select {
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        color: rgb(104, 104, 104);
+        background: transparent;
+        cursor: pointer;
+        appearance: none;
+        font-size: 16px;
+      }
+
+      label {
+        font-size: 16px;
+        color: rgb(104, 104, 104);
+        margin-left: 10px;
+        transition: 0.5s ease-out;
+      }
+      label:hover {
+        transform: translateX(20px);
+      }
+
+      .type:hover {
+        background: #efefef;
+      }
+      .amount:hover {
+        background: #efefef;
+      }
+      .quantity:hover {
+        background: #efefef;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gift-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(1, 0.5fr 1fr) / repeat(1, 1fr);
+    margin-bottom: 100px;
+
+    .gift-order-container {
+      grid-row: 2/3;
+      width: 100%;
+      .text-order {
+        width: 100%;
+
+        h2 {
+          font-family: "EB Garamond", serif;
+          font-size: 2rem;
+          font-weight: 100;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 300;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        p {
+          width: 90%;
+          font-size: 14px;
+          line-height: 1.7rem;
+          margin-top: 50px;
+          color: rgb(88, 88, 88);
+        }
+
+        .disclamer {
+          font-size: 12px;
+          color: rgb(146, 146, 146);
+          line-height: 1.2rem;
+        }
+      }
+      .add-order {
+        width: 90%;
+        margin-top: 50px;
+
+        .type {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .amount {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .quantity {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+
+          button {
+            height: 100%;
+            width: 25%;
+            border: none;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: rgb(88, 88, 88);
+          }
+
+          h3 {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background: rgb(219, 219, 219);
+          }
+        }
+        .add-gift {
+          width: 100%;
+          height: 50px;
+          background: #efefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          transition: 0.5s ease-out;
+          cursor: pointer;
+          margin-top: 40px;
+        }
+        .add-gift:hover {
+          background: black;
+          color: white;
+        }
+      }
+
+      select {
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        color: rgb(104, 104, 104);
+        background: transparent;
+        cursor: pointer;
+        appearance: none;
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 14px;
+        color: rgb(104, 104, 104);
+        margin-left: 10px;
+        transition: 0.5s ease-out;
+      }
+      label:hover {
+        transform: translateX(20px);
+      }
+
+      .type:hover {
+        background: #efefef;
+      }
+      .amount:hover {
+        background: #efefef;
+      }
+      .quantity:hover {
+        background: #efefef;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gift-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template: repeat(1, 0.3fr 1fr) / repeat(1, 1fr);
+    margin-bottom: 100px;
+
+    .gift-order-container {
+      grid-row: 2/3;
+      width: 100%;
+      .text-order {
+        width: 100%;
+
+        h2 {
+          font-family: "EB Garamond", serif;
+          font-size: 1.8rem;
+          font-weight: 100;
+          color: rgb(88, 88, 88);
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 300;
+          margin-top: 10px;
+          color: rgb(88, 88, 88);
+        }
+
+        p {
+          width: 90%;
+          font-size: 13px;
+          line-height: 1.7rem;
+          margin-top: 10px;
+          color: rgb(88, 88, 88);
+        }
+
+        .disclamer {
+          font-size: 12px;
+          color: rgb(146, 146, 146);
+          line-height: 1.2rem;
+        }
+      }
+      .add-order {
+        width: 90%;
+        margin-top: 50px;
+
+        .type {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .amount {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+        }
+        .quantity {
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          transition: all 0.5s ease-out;
+
+          button {
+            height: 100%;
+            width: 25%;
+            border: none;
+            background: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: rgb(88, 88, 88);
+          }
+
+          h3 {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            font-size: 16px;
+          }
+
+          button:hover {
+            background: rgb(219, 219, 219);
+          }
+        }
+        .add-gift {
+          width: 100%;
+          height: 50px;
+          background: #efefef;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1rem;
+          transition: 0.5s ease-out;
+          cursor: pointer;
+          margin-top: 40px;
+        }
+        .add-gift:hover {
+          background: black;
+          color: white;
+        }
+      }
+
+      select {
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        color: rgb(104, 104, 104);
+        background: transparent;
+        cursor: pointer;
+        appearance: none;
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 14px;
+        color: rgb(104, 104, 104);
+        margin-left: 10px;
+        transition: 0.5s ease-out;
+      }
+      label:hover {
+        transform: translateX(20px);
+      }
+
+      .type:hover {
+        background: #efefef;
+      }
+      .amount:hover {
+        background: #efefef;
+      }
+      .quantity:hover {
+        background: #efefef;
+      }
+    }
+  }
+}

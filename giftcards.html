@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straps</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700&display=swap" rel="stylesheet"> 
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/giftcards.css">
+</head>
+<body>
+
+    <div class="warpper"></div>
+
+    <!-- Burger Menu -->
+
+    <div class="burger-menu">
+      <div class="btn-exit-container">
+        <div class="exit">
+          <img class="exitBtn" src="/Imgs/right-arrow.png" alt="">
+        </div>
+      </div>
+      <div class="burger-warpper">
+        
+        
+        <div class="menu-links">
+          <a href="index.html"><h2>Home</h2></a>
+          <a href="shop.html"><h2>Shop</h2></a>
+          <a href="about.html"><h2>About</h2></a>
+        </div>
+        <ul>
+          <a href="straps.html"><li>Straps</li></a>
+          <a href="giftcards.html"><li>Gift Cards</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="nav-cart">
+      <div class="btn-exit-container">
+      <div class="exit-cart">
+        <img class="exit-cartBtn" src="/Imgs/right-arrow.png" alt="">
+      </div>
+    </div>
+      <div class="cart-container">
+        <!-- products -->
+      
+      
+        <!-- CheckOut -->
+      <div class="check-out-container">
+        <div class="subtotal">
+          <p>Subtotal</p>
+          <h3>$ </h3>
+        </div>
+        <div class="check-out-btn">
+          <button type="submit">Check Out</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Navigation -->
+
+    <div class="nav">
+      <div>
+        <a href="index.html"><h1>TINKΞR</h1></a>
+      </div>
+      <div class="menu-container">
+        <div class="cart-icon">
+          <p>0</p>
+          <i class="fa fa-shopping-bag"></i>
+        </div>
+        <div class="burger-button">
+          <img src="imgs/open-menu.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="gift-container">
+        <div class="gift-img-container">
+            <img src="./Imgs/gift-card-img.jpg" alt="">
+        </div>
+        <div class="gift-order-container">
+            <div class="text-order">
+                <h2>Gift Cards</h2>
+                <h3>$50</h3>
+                <p>Our digital gift cards are delivered by email.
+                 After you purchase a gift card you will receive 
+                 an email containing a unique code. This email 
+                 will look nice, so you can print it and mail it
+                  to your friend, or just forward the email! 
+                  Then your friend can enter the unique code 
+                at the checkout. It's as simple as that! 
+                </p>
+                <p class="disclamer">Please note: this gift card cannot be used to pay 
+                your electrical bill, ukulele lessons or dinner at 
+                your favorite Thai restaurant. It can, however, 
+                get someone you love a shiny new watch. 
+                Gift cards are not redeemable for cash.
+                </p>
+            </div>
+            <div class="add-order">
+                <div class="type">
+                    <label for="type">Type</label>
+                    <select name="type" id="type">
+                        <option value="card">Digital Gift Card</option>
+                    </select>
+                </div>
+                <div class="amount">
+                    <label for="amount">Amount</label>
+                    <select name="amount" id="amount">
+                        <option value="250">$250</option>
+                        <option value="200">$200</option>
+                        <option value="150">$150</option>
+                        <option value="100">$100</option>
+                        <option value="50">$50</option>
+                    </select>
+                </div>
+                <div class="quantity">
+                    <label for="quantity">Quantity</label>
+                    <button type="button" id="lowerCountt"><i class="fa fa-minus"></i></button>
+                    <h3 id="number">1</h1>
+                    <button type="button" id="addCountt"><i class="fa fa-plus"></i></button>
+                </div>
+                <a href="#">
+                <button class="add-gift">Add To Cart</button>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    
+    <footer class="footer">
+        <div class="container">
+          <ul class="shop-links">
+            <li><a href="shop.html">Shop Watches</a></li>
+            <li><a href="straps.html">Shop Straps</a></li>
+            <li><a href="#">About Straps</a></li>
+            <li><a href="#">About Tinker</a></li>
+          </ul>
+          <ul class="help-links">
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+          <div class="media-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+          <div class="logo">
+            <h2>TINKΞR</h2>
+          </div>
+        </div>
+      </footer>
+  
+      
+      <script src="script.js"></script>
+      <script src="/javascripts/giftcard.js"></script>
+    </body>
+  </html>

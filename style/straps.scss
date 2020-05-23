@@ -1,0 +1,651 @@
+.straps-header {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h2 {
+    font-family: "EB Garamond", serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: rgb(66, 66, 66);
+  }
+
+  p {
+    width: 37%;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+
+.straps-grid-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-gap: 60px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 100px;
+  margin-top: 100px;
+
+  .grid-strap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-height: 400px;
+
+    button {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 130px;
+      height: 50px;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.5s ease-in;
+    }
+
+    button:hover {
+      background: black;
+      color: white;
+    }
+
+    .img-strap-container {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: all 0.9 ease-in;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .grid-strap:hover button {
+    opacity: 1;
+    top: 50%;
+  }
+
+  .title {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+    h3 {
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .straps-header {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+      font-family: "EB Garamond", serif;
+      font-weight: 300;
+      font-size: 4rem;
+      color: rgb(66, 66, 66);
+    }
+
+    p {
+      width: 45%;
+      line-height: 1.5rem;
+      text-align: center;
+    }
+  }
+
+  .straps-grid-container {
+    .grid-strap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .title {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .scale:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.9;
+    }
+
+    .img-strap1 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-black-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap2 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-camel-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap3 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-grey-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap4 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-nude-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap5 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-green-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap6 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-navy-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .straps-header {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+      font-family: "EB Garamond", serif;
+      font-weight: 300;
+      font-size: 4rem;
+      color: rgb(66, 66, 66);
+    }
+
+    p {
+      width: 60%;
+      line-height: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .straps-grid-container {
+    .grid-strap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .title {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .scale:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.9;
+    }
+
+    .img-strap1 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-black-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap2 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-camel-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap3 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-grey-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap4 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-nude-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap5 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-green-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap6 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-navy-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .straps-header {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+      font-family: "EB Garamond", serif;
+      font-weight: 300;
+      font-size: 4rem;
+      color: rgb(66, 66, 66);
+    }
+
+    p {
+      width: 80%;
+      line-height: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .straps-grid-container {
+    .grid-strap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .title {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .scale:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.9;
+    }
+
+    .img-strap1 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-black-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap2 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-camel-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap3 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-grey-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap4 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-nude-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap5 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-green-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap6 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-navy-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .straps-header {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    h2 {
+      font-family: "EB Garamond", serif;
+      font-weight: 300;
+      font-size: 4rem;
+      color: rgb(66, 66, 66);
+    }
+
+    p {
+      width: 90%;
+      line-height: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+
+  .straps-grid-container {
+    .grid-strap {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-height: 300px;
+    }
+
+    .title {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+
+      h2 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+      h3 {
+        font-weight: 300;
+        font-size: 0.9rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .scale:hover {
+      transform: scale(1.05);
+      transition: all 0.5s ease-in-out;
+      opacity: 0.9;
+    }
+
+    .img-strap1 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-black-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap2 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-camel-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap3 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-grey-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap4 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-nude-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap5 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-green-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    .img-strap6 {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background-image: url("/Imgs/straps/straps-navy-g_600x.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: scale(1);
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
