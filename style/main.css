@@ -548,7 +548,7 @@ body {
   right: 0;
   right: 0px;
   top: 0px;
-  min-width: 450px;
+  width: 450px;
   height: 100vh;
   background: white;
   z-index: 10;
@@ -556,6 +556,12 @@ body {
           transform: translateX(100%);
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+}
+
+@media (max-width: 450px) {
+  .burger-menu {
+    width: 100%;
+  }
 }
 
 .burger-menu .btn-exit-container {
@@ -690,6 +696,12 @@ body {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
   overflow-y: auto;
+}
+
+@media (max-width: 400px) {
+  .nav-cart {
+    width: 100%;
+  }
 }
 
 .nav-cart .btn-exit-container {
