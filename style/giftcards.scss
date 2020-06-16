@@ -1,22 +1,12 @@
 .gift-container {
   width: 80%;
   margin: auto;
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(1, 1.4fr 1fr);
 
   .gift-img-container {
     width: 100%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
 
     img {
-      width: 90%;
-      max-height: 600px;
+      width: 100%;
     }
   }
 
@@ -171,9 +161,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(1, 1.4fr 1fr);
 
     .gift-order-container {
       width: 100%;
@@ -321,9 +308,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-template: repeat(1, 0.5fr 1fr) / repeat(1, 1fr);
-    margin-bottom: 100px;
 
     .gift-order-container {
       grid-row: 2/3;
@@ -472,10 +456,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-template: repeat(1, 0.5fr 1fr) / repeat(1, 1fr);
-    margin-bottom: 100px;
-
     .gift-order-container {
       grid-row: 2/3;
       width: 100%;
@@ -623,9 +603,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: grid;
-    grid-template: repeat(1, 0.3fr 1fr) / repeat(1, 1fr);
-    margin-bottom: 100px;
 
     .gift-order-container {
       grid-row: 2/3;

@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/giftcards.css">
 </head>
@@ -86,11 +90,15 @@
       </div>
     </div>
 
-    <div class="gift-container">
-        <div class="gift-img-container">
+    <div class="gift-container mb-5">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="gift-img-container">
             <img src="./Imgs/gift-card-img.jpg" alt="">
         </div>
-        <div class="gift-order-container">
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="gift-order-container">
             <div class="text-order">
                 <h2>Gift Cards</h2>
                 <h3>$50</h3>
@@ -138,24 +146,27 @@
             </div>
 
         </div>
+        </div>
+      </div>
+
+
+
+        
+        
 
     </div>
 
 
-
-
-
-
-
     <!-- Footer -->
-    
-    <footer class="footer">
-        <div class="container">
+
+    <footer class="footer pt-4 pb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
           <ul class="shop-links">
             <li><a href="shop.html">Shop Watches</a></li>
             <li><a href="straps.html">Shop Straps</a></li>
-            <li><a href="#">About Straps</a></li>
-            <li><a href="#">About Tinker</a></li>
+            <li><a href="aboutstraps.html">About Straps</a></li>
+            <li><a href="about.html">About Tinker</a></li>
           </ul>
           <ul class="help-links">
             <li><a href="giftcards.html">Gift Cards</a></li>
@@ -163,6 +174,9 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="help.html">Help</a></li>
           </ul>
+        </div>
+
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
           <div class="media-icons">
             <i class="fa fa-instagram"></i>
             <i class="fa fa-pinterest-p"></i>
@@ -171,10 +185,9 @@
             <h2>TINKΞR</h2>
           </div>
         </div>
-      </footer>
-  
-      
-      <script src="script.js"></script>
-      <script src="/javascripts/giftcard.js"></script>
-    </body>
-  </html>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -44,97 +44,137 @@ function concatValues(obj) {
 
 //End Filter Shop Items
 
-//Add Watches To Cart
-(function () {
-  const btnWatch = document.querySelectorAll(".btn-watch");
+// //Add Watches To Cart
 
-  btnWatch.forEach(function (btn) {
-    btn.addEventListener("click", function (event) {
-      //Img
-      let imgPath = event.target.nextElementSibling.firstElementChild.src;
+// (function () {
+//   const btnWatch = document.querySelectorAll(".btn-watch");
 
-      //Name
-      let finishPath =
-        event.target.nextElementSibling.nextElementSibling.firstElementChild
-          .textContent;
-      let strapFirstWord = event.target.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.textContent.slice(
-        0,
-        6
-      );
-      let strapLastWord = event.target.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.textContent.slice(
-        14,
-        20
-      );
-      let strapPath = strapFirstWord + strapLastWord;
+//   let watches = [];
 
-      let name = `${finishPath} / ${strapPath}`;
+//   btnWatch.forEach(function (btn) {
+//     btn.addEventListener("click", function (event) {
+//       //Img
+//       let imgPath = event.target.nextElementSibling.firstElementChild.src;
 
-      //Price
-      let fullPrice =
-        event.target.nextElementSibling.nextElementSibling.firstElementChild
-          .nextElementSibling.nextElementSibling.textContent;
-      let price = fullPrice.slice(1, 5).trim();
+//       //Name
+//       let finishPath =
+//         event.target.nextElementSibling.nextElementSibling.firstElementChild
+//           .textContent;
+//       let strapFirstWord = event.target.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.textContent.slice(
+//         0,
+//         6
+//       );
+//       let strapLastWord = event.target.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.textContent.slice(
+//         14,
+//         20
+//       );
+//       let strapPath = strapFirstWord + strapLastWord;
 
-      const watch = {};
-      watch.img = imgPath;
-      watch.name = name;
-      watch.price = price;
+//       let name = `${finishPath} / ${strapPath}`;
 
-      const cartItem = document.createElement("div");
-      cartItem.classList.add("products-container");
+//       //Price
+//       let fullPrice =
+//         event.target.nextElementSibling.nextElementSibling.firstElementChild
+//           .nextElementSibling.nextElementSibling.textContent;
+//       let price = fullPrice.slice(1, 5).trim();
 
-      cartItem.innerHTML = `
-        <div class="img-cart">
-          <img src="${watch.img}" alt="">
-        </div>
-        <div class="name-cart">
-          <h3>${watch.name}</h3> 
-        </div>
-        <div class="price-cart">
-          <h3>${watch.price} $</h3>
-        <div class="bin-icon">
-          <i class="fa fa-trash remove"></i>
-        </div>  
-        `;
+//       const watch = {};
+//       watch.img = imgPath;
+//       watch.name = name;
+//       watch.price = price;
 
-      const cartContainer = document.querySelector(".cart-container");
-      const cartTotal = document.querySelector(".check-out-container");
-      if (cartContainer.insertBefore(cartItem, cartTotal)) {
-        cartMenu.classList.toggle("nav-cart-active");
-        warpper.classList.add("warpper-active");
-        body.classList.add("scrollY");
-      }
+//       console.log(watch);
 
-      showTotal();
+//       watches.push(watch);
+//       localStorage.setItem("watches", JSON.stringify(watches));
 
-      // Delete Items
-      cartItem.lastElementChild.lastElementChild.firstElementChild.addEventListener(
-        "click",
-        function (event) {
-          event.target.parentElement.parentElement.parentElement.remove();
-          showTotal();
-        }
-      );
-    });
-  });
+//       // const cartItem = document.createElement("div");
+//       // cartItem.classList.add("products-container");
 
-  // Total Price
-  function showTotal() {
-    const total = [];
-    const prices = document.querySelectorAll(".price-cart h3");
+//       // cartItem.innerHTML = `
+//       //   <div class="img-cart">
+//       //     <img src="${watch.img}" alt="">
+//       //   </div>
+//       //   <div class="name-cart">
+//       //     <h3>${watch.name}</h3>
+//       //   </div>
+//       //   <div class="price-cart">
+//       //     <h3>${watch.price} $</h3>
+//       //   <div class="bin-icon">
+//       //     <i class="fa fa-trash remove"></i>
+//       //   </div>
+//       //   `;
 
-    prices.forEach(function (price) {
-      total.push(parseFloat(price.textContent));
-    });
+//       // const cartContainer = document.querySelector(".cart-container");
+//       // const cartTotal = document.querySelector(".check-out-container");
+//       // if (cartContainer.insertBefore(cartItem, cartTotal)) {
+//       //   cartMenu.classList.toggle("nav-cart-active");
+//       //   warpper.classList.add("warpper-active");
+//       //   body.classList.add("scrollY");
+//       // }
 
-    const totalPrice = total.reduce(function (total, price) {
-      total += price;
-      return total;
-    }, 0);
+//       showTotal();
 
-    document.querySelector(".subtotal h3").textContent = "$" + totalPrice;
-    document.querySelector(".cart-icon p").textContent = total.length;
-  }
-})();
+//       // Delete Items
+//       cartItem.lastElementChild.lastElementChild.firstElementChild.addEventListener(
+//         "click",
+//         function (event) {
+//           event.target.parentElement.parentElement.parentElement.remove();
+//           showTotal();
 
-//End Add Watches To Cart
+//           // let storageWatches = JSON.parse(localStorage.getItem('watches'));
+//           // let products = storagewatches.filter(watches => product.productId !== productId );
+//           // localStorage.setItem('products', JSON.stringify(products));
+//         }
+//       );
+//     });
+//   });
+
+//   // Total Price
+//   function showTotal() {
+//     const total = [];
+//     const prices = document.querySelectorAll(".price-cart h3");
+
+//     prices.forEach(function (price) {
+//       total.push(parseFloat(price.textContent));
+//     });
+
+//     const totalPrice = total.reduce(function (total, price) {
+//       total += price;
+//       return total;
+//     }, 0);
+
+//     document.querySelector(".subtotal h3").textContent = "$" + totalPrice;
+//     document.querySelector(".cart-icon p").textContent = total.length;
+//   }
+
+//   if (localStorage.getItem("watches")) {
+//     watches = JSON.parse(localStorage.getItem("watches"));
+//   }
+
+//   watches.forEach(function (watch) {
+//     const cartItem = document.createElement("div");
+//     cartItem.classList.add("products-container");
+
+//     cartItem.innerHTML = `
+//         <div class="img-cart">
+//           <img src="${watch.img}" alt="">
+//         </div>
+//         <div class="name-cart">
+//           <h3>${watch.name}</h3>
+//         </div>
+//         <div class="price-cart">
+//           <h3>${watch.price} $</h3>
+//         <div class="bin-icon">
+//           <i class="fa fa-trash remove"></i>
+//         </div>
+//         `;
+
+//     const cartContainer = document.querySelector(".cart-container");
+//     const cartTotal = document.querySelector(".check-out-container");
+//     cartContainer.insertBefore(cartItem, cartTotal);
+//     showTotal();
+//   });
+// })();
+
+// //End Add Watches To Cart

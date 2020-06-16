@@ -92,7 +92,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
 .help-container .help-grid .help-grid-text h2 {
@@ -187,7 +187,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
   }
   .help-container .help-grid .help-grid-text h2 {
     font-weight: 100;
@@ -282,7 +282,7 @@
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
   }
   .help-container .help-grid .help-grid-text h2 {
     font-weight: 100;
@@ -371,7 +371,7 @@
     width: 80%;
     height: 100%;
     margin: auto;
-    font-family: 'EB Garamond', serif;
+    font-family: "EB Garamond", serif;
   }
   .help-container .help-grid .help-grid-text h2 {
     font-weight: 100;

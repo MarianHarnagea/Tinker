@@ -17,8 +17,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+
     <link rel="stylesheet" href="style/straps.css" />
+    <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
     <div class="warpper"></div>
@@ -119,31 +124,52 @@
       </p>
     </div>
     <!--Strap Items-->
-    <div class="straps-grid-container">
+    <div class="straps-grid-container my-5 mx-3 m-sm-auto">
       <!-- strapitems.json -->
+      <div class="row straps-dom">
+        <div class="col-6 col-md-3 col-xl-2.5 m-auto m-sm-0">
+          <div class="grid-strap">
+            <button class="btn-strap">Add to Cart</button>
+            <a href="#">
+              <div class="img-strap-container">
+                <img src="Imgs/straps/straps-green-g_600x.jpg" />
+              </div>
+              <div class="title">
+                <h2>name</h2>
+                <h3>$46</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <ul class="shop-links">
-          <li><a href="shop.html">Shop Watches</a></li>
-          <li><a href="straps.html">Shop Straps</a></li>
-          <li><a href="aboutstraps.html">About Straps</a></li>
-          <li><a href="about.html">About Tinker</a></li>
-        </ul>
-        <ul class="help-links">
-          <li><a href="giftcards.html">Gift Cards</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-        <div class="media-icons">
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest-p"></i>
+    <footer class="footer pt-4 pb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <ul class="shop-links">
+            <li><a href="shop.html">Shop Watches</a></li>
+            <li><a href="straps.html">Shop Straps</a></li>
+            <li><a href="aboutstraps.html">About Straps</a></li>
+            <li><a href="about.html">About Tinker</a></li>
+          </ul>
+          <ul class="help-links">
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
         </div>
-        <div class="logo">
-          <h2>TINKΞR</h2>
+
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <div class="media-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+          <div class="logo">
+            <h2>TINKΞR</h2>
+          </div>
         </div>
       </div>
     </footer>

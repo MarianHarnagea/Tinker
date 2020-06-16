@@ -20,8 +20,12 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style/shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="/style/main.css" />
+    <link rel="stylesheet" href="/style/shop.css" />
   </head>
   <body>
     <div class="warpper"></div>
@@ -56,31 +60,48 @@
         </div>
       </div>
       <div class="cart-container">
-        <!--
-        <div class="products-container">
-          <div class="img-cart">
-            <img src="./Imgs/watches/Tinker_38mm_Midnight_600x.jpg" alt="" />
+        <!-- <div class="products-container">
+          <div class="row pl-0 pr-0">
+            <div class="col-3 pl-0 pr-0">
+              <div class="img-cart">
+                <img
+                  src="./Imgs/watches/Tinker_38mm_Midnight_600x.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 pl-0 pr-0">
+              <div class="name-cart">
+                <div class="cart-name">
+                  <h3>38mm Gold Watch / Black Strap</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 pl-0 pr-0">
+              <div class="price-cart">
+                <div class="cart-price">
+                  <h4>$ 150</h4>
+                </div>
+                <div class="bin-icon">
+                  <i class="fa fa-trash remove"></i>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        <!-- <div class="img-cart">
+            <img src="${watch.img}" alt="">
           </div>
           <div class="name-cart">
-            <div class="cart-name">
-              <h3>38mm Gold Watch / Black Strap</h3>
-            </div>
-            <div class="cart-amount">
-              <i class="fa fa-angle-left"></i>
-              <h3>1</h3>
-              <i class="fa fa-angle-right"></i>
-            </div>
+            <h3>${watch.name}</h3>
           </div>
           <div class="price-cart">
-            <div class="cart-price">
-              <h4>$ 150</h4>
-            </div>
-            <div class="bin-icon">
-              <i class="fa fa-trash remove"></i>
-            </div>
+            <h3>${watch.price} $</h3>
+          <div class="bin-icon">
+            <i data-id=${watch.id} class="fa fa-trash remove"></i>
           </div>
         </div>
-          -->
+
         <!-- products -->
 
         <!-- CheckOut -->
@@ -94,6 +115,7 @@
           </div>
         </div>
       </div>
+      -->
     </div>
 
     <!-- Navigation -->
@@ -233,7 +255,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-shop">
       <div class="grid">
         <!-- Watches Grid Section -->
 
@@ -646,26 +668,31 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
-      <div class="container">
-        <ul class="shop-links">
-          <li><a href="shop.html">Shop Watches</a></li>
-          <li><a href="straps.html">Shop Straps</a></li>
-          <li><a href="aboutstraps.html">About Straps</a></li>
-          <li><a href="about.html">About Tinker</a></li>
-        </ul>
-        <ul class="help-links">
-          <li><a href="giftcards.html">Gift Cards</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-        <div class="media-icons">
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest-p"></i>
+    <footer class="footer pt-4 pb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <ul class="shop-links">
+            <li><a href="shop.html">Shop Watches</a></li>
+            <li><a href="straps.html">Shop Straps</a></li>
+            <li><a href="aboutstraps.html">About Straps</a></li>
+            <li><a href="about.html">About Tinker</a></li>
+          </ul>
+          <ul class="help-links">
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
         </div>
-        <div class="logo">
-          <h2>TINKΞR</h2>
+
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <div class="media-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+          <div class="logo">
+            <h2>TINKΞR</h2>
+          </div>
         </div>
       </div>
     </footer>

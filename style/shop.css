@@ -16,6 +16,24 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 992px) {
+  .filters {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .filters {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .ui-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,11 +48,11 @@
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 2px;
   color: #464545;
-  margin: 0px 20px 0 40px;
+  margin: 0 10px 0 20px;
 }
 
 .button-group {
@@ -60,7 +78,7 @@ img {
 }
 
 .button {
-  margin-left: 15px;
+  margin-right: 5px;
   font-family: sans-serif;
   cursor: pointer;
   background: white;
@@ -109,15 +127,74 @@ img {
   border-radius: 50%;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .grid {
-  padding-left: 100px;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 1406px) {
+  .grid {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 1239px) {
+  .grid {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 1128px) {
+  .grid {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 962px) {
+  .grid {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 851px) {
+  .grid {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 730px) {
+  .grid {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 628px) {
+  .grid {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 573px) {
+  .grid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 517px) {
+  .grid {
+    width: 250px;
+  }
 }
 
 .grid .grid-item {
   position: relative;
   overflow: hidden;
-  max-width: 250px;
-  max-height: 400px;
+  margin: auto;
+  width: 250px;
 }
 
 .grid .grid-item button {
@@ -204,74 +281,5 @@ img {
 
 .show {
   display: block;
-}
-
-@media screen and (max-width: 900px) {
-  h3 {
-    margin: 0px 20px 0 20px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .grid {
-    padding-left: 10px;
-  }
-  .button {
-    margin-left: 5px;
-  }
-  h3 {
-    margin: 0px 20px 0 20px;
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .grid {
-    padding-left: 120px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .grid {
-    padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .grid {
-    padding-left: 150px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .grid {
-    padding-left: 100px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .grid {
-    padding-left: 80px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .grid {
-    padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .grid {
-    padding-left: 30px;
-  }
 }
 /*# sourceMappingURL=shop.css.map */

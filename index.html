@@ -10,8 +10,16 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style/main.css" />
   </head>
@@ -83,7 +91,7 @@
 
     <!-- Page Imgs Links -->
 
-    <div class="header">
+    <div class="header mb-4">
       <h1>It's Midnight</h1>
       <p>
         The Midnight Limited Edition features subtle accents of white
@@ -91,35 +99,47 @@
       </p>
       <a href="midnight.html"><button type="submit">Shop Now</button></a>
     </div>
-    <div class="shop-section">
-      <a href="shop.html" class="a-1">
-        <div class="section-1">
-          <h2>Shop The Line</h2>
-        </div>
-      </a>
 
-      <a href="straps.html" class="a-2">
-        <div class="section-2">
-          <h2>Shop Straps</h2>
+    <div class="shop-section mb-4">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <a href="shop.html">
+            <div class="img-container shop-right">
+              <h2>Shop The Line</h2>
+            </div>
+          </a>
         </div>
-      </a>
-
-      <a href="about.html" class="a-3">
-        <div class="section-3">
-          <h2>About Tinker</h2>
+        <div class="col-12 col-md-5">
+          <div class="row">
+            <div class="col-12 pt-4 pt-md-0">
+              <a href="straps.html">
+                <div class="img-container straps-left">
+                  <h2>Shop Straps</h2>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 pt-4 d-none d-md-block">
+              <a href="about.html">
+                <div class="img-container about-left">
+                  <h2>About Tinker</h2>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 pt-4">
+              <a href="giftcards.html">
+                <div class="img-container card-left">
+                  <h2>The Gift of Tinker</h2>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </a>
-
-      <a href="giftcards.html" class="a-4">
-        <div class="section-4">
-          <h2>The Gift of Tinker</h2>
-        </div>
-      </a>
+      </div>
     </div>
 
     <!-- Refound Pic -->
 
-    <div class="refound">
+    <div class="refound mb-5">
       <h2>
         Wear it for a month, and if you’re not in love by day 30, we’ll take it
         back for a full refund. Free shipping, no questions asked.
@@ -128,59 +148,77 @@
 
     <!-- Subscribe Section -->
 
-    <div class="subscribe-section">
-      <div class="grid-container1">
-        <div class="grid-img1"></div>
-      </div>
-      <div class="grid-container2">
-        <div class="grid-img2"></div>
-      </div>
-      <div class="grid-container3">
-        <div class="grid-img3"></div>
-      </div>
-      <div class="grid-container4">
-        <div class="grid-img4"></div>
-      </div>
-      <div class="subscribe">
-        <h2>Keep In Touch</h2>
-        <p>
-          Sign up for our newsletter to get the latest news, announcements, and
-          special offers
-        </p>
-        <input
-          type="email"
-          class="subscribe-input"
-          placeholder="Subscribe to Newsletter"
-        />
-        <button type="submit">Sign Up</button>
+    <div class="subscribe-section mb-5">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-6 mb-4">
+          <div class="row">
+            <div class="col-6">
+              <div class="img-container mb-4">
+                <img src="./Imgs/grid-img1.jpg" alt="" />
+              </div>
+              <div class="img-container">
+                <img src="./Imgs/grid-img2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-container mb-4">
+                <img src="./Imgs/grid-img3.jpg" alt="" />
+              </div>
+              <div class="img-container">
+                <img src="./Imgs/grid-img4.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-6">
+          <div class="subscribe">
+            <h2>Keep In Touch</h2>
+            <p>
+              Sign up for our newsletter to get the latest news, announcements,
+              and special offers
+            </p>
+            <input
+              type="email"
+              class="subscribe-input"
+              placeholder="Subscribe to Newsletter"
+            />
+            <button type="submit">Sign Up</button>
+          </div>
+        </div>
       </div>
     </div>
 
     <!-- Footer -->
 
-    <footer class="footer">
-      <div class="container">
-        <ul class="shop-links">
-          <li><a href="shop.html">Shop Watches</a></li>
-          <li><a href="straps.html">Shop Straps</a></li>
-          <li><a href="aboutstraps.html">About Straps</a></li>
-          <li><a href="about.html">About Tinker</a></li>
-        </ul>
-        <ul class="help-links">
-          <li><a href="giftcards.html">Gift Cards</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-        <div class="media-icons">
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest-p"></i>
+    <footer class="footer pt-4 pb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <ul class="shop-links">
+            <li><a href="shop.html">Shop Watches</a></li>
+            <li><a href="straps.html">Shop Straps</a></li>
+            <li><a href="aboutstraps.html">About Straps</a></li>
+            <li><a href="about.html">About Tinker</a></li>
+          </ul>
+          <ul class="help-links">
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
         </div>
-        <div class="logo">
-          <h2>TINKΞR</h2>
+
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <div class="media-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+          <div class="logo">
+            <h2>TINKΞR</h2>
+          </div>
         </div>
       </div>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

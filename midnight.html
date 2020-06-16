@@ -13,6 +13,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./style/flickity.min.css" media="screen" />
     <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="/style/midnight.css" />
@@ -83,104 +87,187 @@
       </div>
     </div>
 
-    <div class="shop-product-container">
-      <div class="watch-container">
-        <div class="main-carousel" data-flickity='{"autoPlay": 4000 }'>
-          <div class="carousel-cell">
-            <img
-              src="/Imgs/product-imgs/Tinker_38mm_Midnight_1024x1024.jpg"
-              alt=""
-            />
+    <div class="shop-product-container mb-5">
+      <div class="row">
+        <div class="col-12 col-lg-7">
+          <div class="watch-container">
+            <div class="main-carousel" data-flickity='{"autoPlay": 4000 }'>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/Tinker_38mm_Midnight_1024x1024.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFW001a_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFW003_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFW004_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFWC001_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFWC002_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              <div class="carousel-cell">
+                <img
+                  src="/Imgs/product-imgs/BFWC003_1800x1800.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+              ...
+            </div>
           </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFW001a_1800x1800.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFW003_1800x1800.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFW004_1800x1800.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFWC001_1800x1800.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFWC002_1800x1800.jpg" alt="" />
-          </div>
-          <div class="carousel-cell">
-            <img src="/Imgs/product-imgs/BFWC003_1800x1800.jpg" alt="" />
-          </div>
-          ...
         </div>
-      </div>
-      <div class="text-watch-container">
-        <h2>Midnight Limited Edition</h2>
-        <h3>$225</h3>
-        <p>
-          Our classic Tinker shape, in a sleek all-black design, with subtle
-          accents of white luminescent hands and raised steel indices. The
-          Midnight Limited Edition was created as a very limited edition of only
-          100 watches.
-        </p>
-        <ul>
-          <li>Limited edition of only 100 watches.</li>
-          <li>Each watch comes with a card with edition number</li>
-          <li>Applied steel indices</li>
-          <li>
-            Phosphorescent hands that glow in the dark after being charged in
-            light
-          </li>
-          <li>PVD coated 38mm Hand-Polished 316L Stainless Steel Case</li>
-          <li>Sapphire Crystal Window</li>
-          <li>Swiss Ronda 517 movement</li>
-          <li>18mm Vegetable-Dyed Italian Leather.</li>
-          <li>5 ATM water resistance</li>
-          <li>2-year warranty</li>
-        </ul>
-        <div class="quantity-container">
-          <label for="watch-quantity">Amount</label>
-          <select name="watch-quantity" id="amount">
-            <option value="quantity">Five</option>
-            <option value="quantity">Four</option>
-            <option value="quantity">Three</option>
-            <option value="quantity">Two</option>
-            <option value="quantity">One</option>
-          </select>
+        <div class="col-12 col-lg-5 mt-5">
+          <div class="text-watch-container">
+            <h2>Midnight Limited Edition</h2>
+            <h3>$225</h3>
+            <p>
+              Our classic Tinker shape, in a sleek all-black design, with subtle
+              accents of white luminescent hands and raised steel indices. The
+              Midnight Limited Edition was created as a very limited edition of
+              only 100 watches.
+            </p>
+            <ul>
+              <li>Limited edition of only 100 watches.</li>
+              <li>Each watch comes with a card with edition number</li>
+              <li>Applied steel indices</li>
+              <li>
+                Phosphorescent hands that glow in the dark after being charged
+                in light
+              </li>
+              <li>PVD coated 38mm Hand-Polished 316L Stainless Steel Case</li>
+              <li>Sapphire Crystal Window</li>
+              <li>Swiss Ronda 517 movement</li>
+              <li>18mm Vegetable-Dyed Italian Leather.</li>
+              <li>5 ATM water resistance</li>
+              <li>2-year warranty</li>
+            </ul>
+            <!-- <div class="quantity-container">
+              <label for="watch-quantity">Amount</label>
+              <select name="watch-quantity" id="amount">
+                <option value="quantity">Five</option>
+                <option value="quantity">Four</option>
+                <option value="quantity">Three</option>
+                <option value="quantity">Two</option>
+                <option value="quantity">One</option>
+              </select>
+            </div> -->
+            <button>Add to Cart</button>
+          </div>
         </div>
-        <button>Add to Cart</button>
       </div>
     </div>
 
-    <div class="grid-product-imgs">
-      <div class="inner-grid1"><div class="product-img1"></div></div>
-      <div class="inner-grid2"><div class="product-img2"></div></div>
-      <div class="inner-grid3"><div class="product-img3"></div></div>
-      <div class="inner-grid4"><div class="product-img4"></div></div>
-      <div class="inner-grid5"><div class="product-img5"></div></div>
+    <div class="grid-product-imgs mb-5">
+      <div class="row">
+        <!-- <div class="col-12 mb-4">
+          <div class="row">
+            <div class="col-6">
+              <div class="img-container">
+                <img src="/Imgs/product-imgs/product-case-ace.jpg" alt="Responsive image" />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="img-container">
+                <img
+                  src="/Imgs/product-imgs/tinker-midnight-strap.png.webp"
+                  alt="Responsive image"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="col-12 mb-4">
+          <div class="img-container">
+            <img
+              src="/Imgs/product-imgs/midnight-lifestyle-0.jpg"
+              class="img-responsive"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="row">
+            <div class="col-4">
+              <div class="img-container">
+                <img
+                  class="img-responsive"
+                  src="/Imgs/product-imgs/midnight-lifestyle-2.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="img-container">
+                <img
+                  class="img-responsive"
+                  src="/Imgs/product-imgs/midnight-lifestyle-3.jpg"
+                  alt="Responsive image"
+                />
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="img-container">
+                <img
+                  class="img-responsive"
+                  src="/Imgs/product-imgs/midnight-lifestyle-3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Footer -->
 
-    <footer class="footer">
-      <div class="container">
-        <ul class="shop-links">
-          <li><a href="shop.html">Shop Watches</a></li>
-          <li><a href="straps.html">Shop Straps</a></li>
-          <li><a href="aboutstraps.html">About Straps</a></li>
-          <li><a href="about.html">About Tinker</a></li>
-        </ul>
-        <ul class="help-links">
-          <li><a href="giftcards.html">Gift Cards</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="help.html">Help</a></li>
-        </ul>
-        <div class="media-icons">
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-pinterest-p"></i>
+    <footer class="footer pt-4 pb-5">
+      <div class="row">
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <ul class="shop-links">
+            <li><a href="shop.html">Shop Watches</a></li>
+            <li><a href="straps.html">Shop Straps</a></li>
+            <li><a href="aboutstraps.html">About Straps</a></li>
+            <li><a href="about.html">About Tinker</a></li>
+          </ul>
+          <ul class="help-links">
+            <li><a href="giftcards.html">Gift Cards</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
         </div>
-        <div class="logo">
-          <h2>TINKΞR</h2>
+
+        <div class="col-12 col-sm-6 d-flex justify-content-around">
+          <div class="media-icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-pinterest-p"></i>
+          </div>
+          <div class="logo">
+            <h2>TINKΞR</h2>
+          </div>
         </div>
       </div>
     </footer>

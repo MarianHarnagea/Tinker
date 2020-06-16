@@ -1,35 +1,14 @@
 .gift-container {
   width: 80%;
   margin: auto;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 5px;
-  -ms-grid-columns: (1.4fr 1fr)[1];
-      grid-template-columns: repeat(1, 1.4fr 1fr);
 }
 
 .gift-container .gift-img-container {
   width: 100%;
-  height: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  overflow: hidden;
 }
 
 .gift-container .gift-img-container img {
-  width: 90%;
-  max-height: 600px;
+  width: 100%;
 }
 
 .gift-container .gift-order-container {
@@ -235,11 +214,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 5px;
-    -ms-grid-columns: (1.4fr 1fr)[1];
-        grid-template-columns: repeat(1, 1.4fr 1fr);
   }
   .gift-container .gift-order-container {
     width: 100%;
@@ -419,12 +393,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (0.5fr 1fr)[1];
-    -ms-grid-columns: (1fr)[1];
-        grid-template: repeat(1, 0.5fr 1fr)/repeat(1, 1fr);
-    margin-bottom: 100px;
   }
   .gift-container .gift-order-container {
     -ms-grid-row: 2;
@@ -607,12 +575,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (0.5fr 1fr)[1];
-    -ms-grid-columns: (1fr)[1];
-        grid-template: repeat(1, 0.5fr 1fr)/repeat(1, 1fr);
-    margin-bottom: 100px;
   }
   .gift-container .gift-order-container {
     -ms-grid-row: 2;
@@ -795,12 +757,6 @@
   .gift-container {
     width: 90%;
     margin: auto;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: (0.3fr 1fr)[1];
-    -ms-grid-columns: (1fr)[1];
-        grid-template: repeat(1, 0.3fr 1fr)/repeat(1, 1fr);
-    margin-bottom: 100px;
   }
   .gift-container .gift-order-container {
     -ms-grid-row: 2;

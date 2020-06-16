@@ -1,384 +1,354 @@
-.help-header{
+.help-header {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.help-container {
+  width: 60%;
+  margin: 50px auto 50px auto;
+  display: grid;
+  grid-gap: 40px;
+  grid-template: repeat(5, 1fr) / repeat(1, 1fr);
+
+  .help-grid {
     width: 100%;
-    height: 500px;
+    max-height: 300px;
+    display: flex;
+
+    .help-grid-img {
+      width: 40%;
+      height: 100%;
+      overflow: hidden;
+
+      .help-grid-img1 {
+        width: 100%;
+        height: 300px;
+        background-image: url("/Imgs/help/setup-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .help-grid-img2 {
+        width: 100%;
+        height: 300px;
+        background-image: url("/Imgs/help/setup-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .help-grid-img3 {
+        width: 100%;
+        height: 300px;
+        background-image: url("/Imgs/help/setup-3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .help-grid-img4 {
+        width: 100%;
+        height: 300px;
+        background-image: url("/Imgs/help/setup-4.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .help-grid-img5 {
+        width: 100%;
+        height: 300px;
+        background-image: url("/Imgs/help/setup-5.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+    }
+
+    .help-grid-text {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-family: "EB Garamond", serif;
+
+      h2 {
+        font-weight: 100;
+        font-size: 2.4rem;
+        color: rgb(90, 90, 90);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .help-header {
+    width: 100%;
+    height: 400px;
     overflow: hidden;
     margin-bottom: 25px;
     background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+  }
 
-}
-
-.help-container{
-    width: 60%;
-    margin:50px auto 50px auto;
+  .help-container {
+    width: 70%;
+    margin: 50px auto 50px auto;
     display: grid;
     grid-gap: 40px;
     grid-template: repeat(5, 1fr) / repeat(1, 1fr);
 
-    
+    .help-grid {
+      width: 100%;
+      max-height: 300px;
+      display: flex;
 
-    .help-grid{
-        width: 100%;
-        max-height: 300px;
+      .help-grid-img {
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+
+        .help-grid-img1 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img2 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img3 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img4 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img5 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-5.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+
+      .help-grid-text {
+        width: 60%;
+        height: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: "EB Garamond", serif;
 
-        .help-grid-img{
-            width: 40%;
-            height: 100%;
-            overflow: hidden;
-
-            .help-grid-img1{
-                width: 100%;
-                height: 300px;
-                background-image: url("/Imgs/help/setup-1.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-            .help-grid-img2{
-                width: 100%;
-                height: 300px;
-                background-image: url("/Imgs/help/setup-2.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-            .help-grid-img3{
-                width: 100%;
-                height: 300px;
-                background-image: url("/Imgs/help/setup-3.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-            .help-grid-img4{
-                width: 100%;
-                height: 300px;
-                background-image: url("/Imgs/help/setup-4.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-            .help-grid-img5{
-                width: 100%;
-                height: 300px;
-                background-image: url("/Imgs/help/setup-5.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-
-
+        h2 {
+          font-weight: 100;
+          font-size: 2.4rem;
+          color: rgb(90, 90, 90);
         }
-
-        .help-grid-text{
-            width: 60%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            font-family: 'EB Garamond', serif;
-            
-            h2{
-                font-weight: 100;
-                font-size: 2.4rem;
-                color: rgb(90, 90, 90);
-            }
-
-
-        }
+      }
     }
+  }
 }
 
-@media screen and (max-width: 1024px){
-    .help-header{
-        width: 100%;
-        height: 400px;
+@media screen and (max-width: 850px) {
+  .help-header {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .help-container {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template: repeat(5, 1fr) / repeat(1, 1fr);
+
+    .help-grid {
+      width: 100%;
+      max-height: 300px;
+      display: flex;
+
+      .help-grid-img {
+        width: 40%;
+        height: 100%;
         overflow: hidden;
-        margin-bottom: 25px;
-        background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-    
-    .help-container{
-        width: 70%;
-        margin:50px auto 50px auto;
-        display: grid;
-        grid-gap: 40px;
-        grid-template: repeat(5, 1fr) / repeat(1, 1fr);
-    
-        
-    
-        .help-grid{
-            width: 100%;
-            max-height: 300px;
-            display: flex;
-    
-            .help-grid-img{
-                width: 40%;
-                height: 100%;
-                overflow: hidden;
-    
-                .help-grid-img1{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-1.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img2{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-2.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img3{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-3.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img4{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-4.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img5{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-5.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-    
-    
-            }
-    
-            .help-grid-text{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-family: 'EB Garamond', serif;
-                
-                h2{
-                    font-weight: 100;
-                    font-size: 2.4rem;
-                    color: rgb(90, 90, 90);
-                }
-    
-    
-            }
+
+        .help-grid-img1 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
         }
-    } 
+        .help-grid-img2 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img3 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img4 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img5 {
+          width: 100%;
+          height: 300px;
+          background-image: url("/Imgs/help/setup-5.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+
+      .help-grid-text {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        font-family: "EB Garamond", serif;
+
+        h2 {
+          font-weight: 100;
+          font-size: 2.2rem;
+          color: rgb(90, 90, 90);
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 850px){
-    .help-header{
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-        margin-bottom: 25px;
-        background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-    
-    .help-container{
-        width: 90%;
-        margin:50px auto 50px auto;
-        display: grid;
-        grid-gap: 40px;
-        grid-template: repeat(5, 1fr) / repeat(1, 1fr);
-    
-        
-    
-        .help-grid{
-            width: 100%;
-            max-height: 300px;
-            display: flex;
-    
-            .help-grid-img{
-                width: 40%;
-                height: 100%;
-                overflow: hidden;
-    
-                .help-grid-img1{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-1.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img2{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-2.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img3{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-3.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img4{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-4.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img5{
-                    width: 100%;
-                    height: 300px;
-                    background-image: url("/Imgs/help/setup-5.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-    
-    
-            }
-    
-            .help-grid-text{
-                width: 60%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-family: 'EB Garamond', serif;
-                
-                h2{
-                    font-weight: 100;
-                    font-size: 2.2rem;
-                    color: rgb(90, 90, 90);
-                }
-    
-    
-            }
-        }
-    } 
-}
+@media screen and (max-width: 650px) {
+  .help-header {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-@media screen and (max-width: 650px){
-    .help-header{
+  .help-container {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template: repeat(5, 1fr) / repeat(1, 1fr);
+
+    .help-grid {
+      width: 100%;
+      max-height: 650px;
+      display: grid;
+      grid-gap: 5px;
+      grid-template: repeat(2, 1fr) / repeat(1, 1fr);
+
+      .help-grid-img {
         width: 100%;
-        height: 200px;
+        height: 100%;
         overflow: hidden;
-        margin-bottom: 25px;
-        background-image: url("/Imgs/help/Tinker_10.09.161032-2_f307467a-2713-40e0-a532-205578701b5c_1800x.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    
-    }
-    
-    .help-container{
-        width: 90%;
-        margin:50px auto 50px auto;
-        display: grid;
-        grid-gap: 40px;
-        grid-template: repeat(5, 1fr) / repeat(1, 1fr);
-    
-        
-    
-        .help-grid{
-            width: 100%;
-            max-height: 650px;
-            display: grid;
-            grid-gap: 5px;
-            grid-template: repeat(2, 1fr) / repeat(1, 1fr);
-            
-    
-            .help-grid-img{
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-                
-    
-                .help-grid-img1{
-                    width: 100%;
-                    height: 250px;
-                    background-image: url("/Imgs/help/setup-1.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img2{
-                    width: 100%;
-                    height: 250px;
-                    background-image: url("/Imgs/help/setup-2.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img3{
-                    width: 100%;
-                    height: 250px;
-                    background-image: url("/Imgs/help/setup-3.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img4{
-                    width: 100%;
-                    height: 250px;
-                    background-image: url("/Imgs/help/setup-4.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-                .help-grid-img5{
-                    width: 100%;
-                    height: 250px;
-                    background-image: url("/Imgs/help/setup-5.jpg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    background-size: contain;
-                }
-    
-    
-            }
-    
-            .help-grid-text{
-                width: 80%;
-                height: 100%;
-                margin: auto;
-                
-                font-family: 'EB Garamond', serif;
-                
-                h2{
-                    font-weight: 100;
-                    font-size: 2.2rem;
-                    color: rgb(90, 90, 90);
-                }
-    
-    
-            }
+
+        .help-grid-img1 {
+          width: 100%;
+          height: 250px;
+          background-image: url("/Imgs/help/setup-1.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
         }
-    } 
+        .help-grid-img2 {
+          width: 100%;
+          height: 250px;
+          background-image: url("/Imgs/help/setup-2.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img3 {
+          width: 100%;
+          height: 250px;
+          background-image: url("/Imgs/help/setup-3.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img4 {
+          width: 100%;
+          height: 250px;
+          background-image: url("/Imgs/help/setup-4.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+        .help-grid-img5 {
+          width: 100%;
+          height: 250px;
+          background-image: url("/Imgs/help/setup-5.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+        }
+      }
+
+      .help-grid-text {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+
+        font-family: "EB Garamond", serif;
+
+        h2 {
+          font-weight: 100;
+          font-size: 2.2rem;
+          color: rgb(90, 90, 90);
+        }
+      }
+    }
+  }
 }

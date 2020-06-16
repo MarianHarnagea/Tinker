@@ -1,262 +1,155 @@
-.shop-product-container{
-    position: relative;
-    width: 75%;
-    margin: 50px auto 50px auto;
-    display: grid;
-    grid-gap: 50px;
-    grid-template: repeat(1, 1fr) / repeat(2, 1fr);
+.shop-product-container {
+  position: relative;
+  width: 75%;
+  margin: 50px auto 50px auto;
+  @media (max-width: 576px) {
+    width: 90%;
+  }
 
-    
-    .watch-container{
-        width: 100%;
-        display: flex;
+  .watch-container {
+    width: 100%;
+    display: flex;
 
-        .main-carousel{
-            width: 100%;
-            height: 600px;
-
-            img{
-                height: 550px;  
-            }
-
-            .flickity-page-dots .dot {
-                width: 14px;
-                height: 14px;
-                opacity: 1;
-                background: transparent;
-                border: 2px solid rgb(0, 0, 0);
-              }
-
-              /* fill-in selected dot */
-              .flickity-page-dots .dot.is-selected {
-                background: rgb(0, 0, 0);
-
-              }
-        }
-
-
-    }
-
-    .text-watch-container{
-        width: 100%;
-
-        h2{
-            font-family: "Roboto", sans-serif;
-            font-weight: 300;
-            font-size: 2rem;
-            height: 60px;
-        }
-
-        h3{
-            font-family: "Roboto", sans-serif;
-            font-weight: 300;
-            height: 60px;
-        }
-
-        p{
-            font-size: 14px;
-            height: 80px;
-        }
-
-        ul{
-            width: 100%;
-            margin-bottom: 20px;
-
-            li{
-                font-size: 12px;
-                line-height: 1.2rem;
-            }
-        }
-
-        .quantity-container{
-            width: 100%;
-            height: 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.5s ease-out;
-
-            select{
-                width: 60%;
-                height: 100%;
-                border: none;
-                font-size: 18px;
-                color: rgb(104, 104, 104);
-                background: transparent;
-                cursor: pointer;
-                appearance: none;
-                font-size: 14px;
-            }
-        
-            label{
-                font-size: 14px;
-                color: rgb(104, 104, 104);
-                margin-left: 10px;
-                transition: 0.5s ease-out;
-        
-            }
-            label:hover{
-                transform: translateX(20px);
-    
-            }
-
-            .quantity-container:hover{
-                background: #efefef;
-            }
-
-        }
-
-        button{
-            width: 100%;
-            height: 50px;
-            background: #efefef;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1rem;
-            transition: 0.5s ease-out;
-            cursor: pointer;
-            margin-top: 40px;
-            border: none;
-            color: rgb(104, 104, 104);
-   
-        }
-        button:hover{
-            background: black;
-            color: white;
-        }
-               
-
-
-    }
-}
-
-.grid-product-imgs{
-    width: 75%;
-    margin: 50px auto 50px auto;
-    display: grid;
-    grid-gap: 25px;
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr) ;
-
-    h3{
-        position: absolute;
-        left: 10%;
-        bottom: 10%;
-        color: black;
-    }
-
-
-    .inner-grid1{
-        width: 100%;
+    .main-carousel {
+      width: 100%;
+      height: 600px;
+      @media (max-width: 992px) {
+        height: 500px;
+      }
+      @media (max-width: 850px) {
         height: 450px;
-        overflow: hidden;
-
-            .product-img1{
-                position: relative;
-                width: 100%;
-                height: 450px;
-                background-image: url("/Imgs/product-imgs/product-case-ace.jpg");
-                background-repeat: no-repeat;
-                background-position: 0% 40%;
-                background-size: cover;
-                
-            }
-
-            .product-img1:hover{
-                animation: rotate-img 10s linear 10;
-            }
-   
-    }
-
-    .inner-grid2{
-        width: 100%;
-        height: 450px;
-        overflow: hidden;
-
-            .product-img2{
-                position: relative;
-                width: 100%;
-                height: 450px;
-                background-image: url("/Imgs/product-imgs/tinker-midnight-strap.png.webp");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-            }
-   
-    }
-
-    .inner-grid3{
-        width: 100%;
+      }
+      @media (max-width: 576px) {
         height: 400px;
-        overflow: hidden;
-        grid-column: 1 / 3;
-        grid-row: 2 / 3;
+      }
 
-            .product-img3{
-                width: 100%;
-                height: 400px;
-                background-image: url("/Imgs/product-imgs/midnight-lifestyle-0.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-   
+      img {
+        height: 600px;
+        @media (max-width: 992px) {
+          height: 500px;
+        }
+        @media (max-width: 850px) {
+          height: 450px;
+        }
+        @media (max-width: 576px) {
+          height: 400px;
+        }
+      }
+
+      .flickity-page-dots .dot {
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+        background: transparent;
+        border: 2px solid rgb(0, 0, 0);
+      }
+
+      /* fill-in selected dot */
+      .flickity-page-dots .dot.is-selected {
+        background: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  .text-watch-container {
+    width: 100%;
+
+    h2 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-size: 2rem;
     }
 
-    .inner-grid4{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-
-            .product-img4{
-                width: 100%;
-                height: 400px;
-                background-image: url("/Imgs/product-imgs/midnight-lifestyle-2.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-   
+    h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
     }
 
-    .inner-grid5{
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-
-            .product-img5{
-                width: 100%;
-                height: 400px;
-                background-image: url("/Imgs/product-imgs/midnight-lifestyle-3.jpg");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-            }
-   
+    p {
+      font-size: 14px;
     }
 
+    ul {
+      width: 100%;
+      margin-bottom: 20px;
+
+      li {
+        font-size: 12px;
+        line-height: 1.2rem;
+      }
+    }
+
+    .quantity-container {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.5s ease-out;
+
+      select {
+        width: 60%;
+        height: 100%;
+        border: none;
+        font-size: 18px;
+        color: rgb(104, 104, 104);
+        background: transparent;
+        cursor: pointer;
+        appearance: none;
+        font-size: 14px;
+      }
+
+      label {
+        font-size: 14px;
+        color: rgb(104, 104, 104);
+        margin-left: 10px;
+        transition: 0.5s ease-out;
+      }
+      label:hover {
+        transform: translateX(20px);
+      }
+
+      .quantity-container:hover {
+        background: #efefef;
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      background: #efefef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      transition: 0.5s ease-out;
+      cursor: pointer;
+      margin-top: 40px;
+      border: none;
+      color: rgb(104, 104, 104);
+    }
+    button:hover {
+      background: black;
+      color: white;
+    }
+  }
 }
 
+.grid-product-imgs {
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+  @media (max-width: 576px) {
+    width: 90%;
+  }
+  .img-container {
+    overflow: hidden;
+    max-height: 500px;
+    width: 100%;
 
-
-
-@keyframes rotate-img {
-0% {
-    background-position: 0% 0%;
-}
-20%{
-    background-position: 0% 20%;
-}
-40%{
-    background-position: 0% 40%;
-}
-60%{
-    background-position: 0% 60%;
-}
-80%{
-    background-position: 0% 80%; 
-}
-100% {
-    background-position: 0% 40%;
-}
+    img {
+      width: 100%;
+      height: 130%;
+    }
+  }
 }

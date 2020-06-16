@@ -1,32 +1,32 @@
 // Gift Card Counter
-function giftCardCounter() {
-  let number = document.getElementById("number");
-  const addCount = document.getElementById("addCountt");
-  const lowerCount = document.getElementById("lowerCountt");
+// function giftCardCounter() {
+//   let number = document.getElementById("number");
+//   const addCount = document.getElementById("addCountt");
+//   const lowerCount = document.getElementById("lowerCountt");
 
-  let giftCount = 1;
-  addCount.addEventListener("click", incrementCounter);
-  lowerCount.addEventListener("click", decrementCounter);
+//   let giftCount = 1;
+//   addCount.addEventListener("click", incrementCounter);
+//   lowerCount.addEventListener("click", decrementCounter);
 
-  function incrementCounter() {
-    giftCount++;
-    number.innerHTML = giftCount;
-  }
+//   function incrementCounter() {
+//     giftCount++;
+//     number.innerHTML = giftCount;
+//   }
 
-  function decrementCounter() {
-    if (giftCount > 1) {
-      giftCount--;
-      number.innerHTML = giftCount;
-    }
-  }
-}
-giftCardCounter();
+//   function decrementCounter() {
+//     if (giftCount > 1) {
+//       giftCount--;
+//       number.innerHTML = giftCount;
+//     }
+//   }
+// }
+// giftCardCounter();
 
 // End Of Gift Card Counter
 
-(function() {
+(function () {
   const btnGift = document.querySelector(".add-gift");
-  btnGift.addEventListener("click", function(event) {
+  btnGift.addEventListener("click", function (event) {
     //Img
     let imgPath =
       event.target.parentElement.parentElement.parentElement
@@ -76,7 +76,7 @@ giftCardCounter();
     // Delete Cart Items
     cartItem.lastElementChild.lastElementChild.firstElementChild.addEventListener(
       "click",
-      function(event) {
+      function (event) {
         event.target.parentElement.parentElement.parentElement.remove();
         showTotal();
       }
@@ -88,11 +88,11 @@ giftCardCounter();
     const total = [];
     const prices = document.querySelectorAll(".price-cart h3");
 
-    prices.forEach(function(price) {
+    prices.forEach(function (price) {
       total.push(parseFloat(price.textContent));
     });
 
-    const totalPrice = total.reduce(function(total, price) {
+    const totalPrice = total.reduce(function (total, price) {
       total += price;
       return total;
     }, 0);

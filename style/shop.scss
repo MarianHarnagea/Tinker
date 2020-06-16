@@ -8,6 +8,13 @@
   align-items: center;
   border-bottom: 1px solid rgb(207, 207, 207);
   margin-bottom: 50px;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+  @media (max-width: 660px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .ui-group {
@@ -18,11 +25,11 @@
 }
 
 h3 {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   letter-spacing: 2px;
   color: rgb(70, 69, 69);
-  margin: 0px 20px 0 40px;
+  margin: 0 10px 0 20px;
 }
 
 .button-group {
@@ -42,7 +49,7 @@ img {
 }
 
 .button {
-  margin-left: 15px;
+  margin-right: 5px;
   font-family: sans-serif;
   cursor: pointer;
   background: white;
@@ -84,16 +91,53 @@ img {
   border: 1px solid black;
   border-radius: 50%;
 }
+.button:focus {
+  outline: none;
+}
 
 .grid {
-  padding-left: 100px;
+  width: 90%;
+  margin: auto;
+  // padding-left: 100px;
+  // display: flex;
+  // flex-flow: wrap;
+  @media (max-width: 1406px) {
+    padding-left: 100px;
+  }
+  @media (max-width: 1239px) {
+    padding-left: 0px;
+  }
+  @media (max-width: 1128px) {
+    padding-left: 100px;
+  }
+  @media (max-width: 962px) {
+    padding-left: 0px;
+  }
+  @media (max-width: 851px) {
+    padding-left: 100px;
+  }
+
+  @media (max-width: 730px) {
+    padding-left: 50px;
+  }
+
+  @media (max-width: 628px) {
+    padding-left: 0px;
+  }
+
+  @media (max-width: 573px) {
+    width: 100%;
+  }
+
+  @media (max-width: 517px) {
+    width: 250px;
+  }
 
   .grid-item {
     position: relative;
     overflow: hidden;
-    max-width: 250px;
-    max-height: 400px;
-
+    margin: auto;
+    width: 250px;
     button {
       position: absolute;
       top: 60%;
@@ -165,69 +209,4 @@ img {
 
 .show {
   display: block;
-}
-
-@media screen and (max-width: 900px) {
-  h3 {
-    margin: 0px 20px 0 20px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .filters {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .grid {
-    padding-left: 10px;
-  }
-  .button {
-    margin-left: 5px;
-  }
-  h3 {
-    margin: 0px 20px 0 20px;
-  }
-}
-
-@media screen and (max-width: 775px) {
-  .grid {
-    padding-left: 120px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .grid {
-    padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .grid {
-    padding-left: 150px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .grid {
-    padding-left: 100px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .grid {
-    padding-left: 80px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .grid {
-    padding-left: 50px;
-  }
-}
-
-@media screen and (max-width: 330px) {
-  .grid {
-    padding-left: 30px;
-  }
 }
